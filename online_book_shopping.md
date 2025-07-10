@@ -34,4 +34,4 @@ This project is a backend API for an online book shopping platform. Built using 
 
 1.  Install dependencies:
 
-pip install fastapi uvicorn python-jose[cryptography] mysql-connector-python passlib[bcrypt]
+pip install -r requirements.txt

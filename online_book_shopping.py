@@ -18,10 +18,10 @@ from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv() 
 
-stripe.api_key = os.getenv("stripe.api_key")
-
+STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
+stripe.api_key = STRIPE_SECRET_KEY
 
 secret_key ="mysecretkey"
 refresh_secret_key = "my_refresh_secret_key"
